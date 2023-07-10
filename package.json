@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-api-masterclass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oztasonur/nodejs-api-masterclass.git"
+  },
+  "author": "Onur Öztaş",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oztasonur/nodejs-api-masterclass/issues"
+  },
+  "homepage": "https://github.com/oztasonur/nodejs-api-masterclass#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
