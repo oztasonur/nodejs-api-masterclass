@@ -6,7 +6,9 @@ exports.getBootcamps = async (req, res, next) => {
   try {
     const bootcamp = await Bootcamp.find();
 
-    res.status(200).json({ success: true, data: bootcamp });
+    res
+      .status(200)
+      .json({ success: true, count: bootcamp.length, data: bootcamp });
   } catch (err) {
     res.status(400).json({ success: false });
   }
